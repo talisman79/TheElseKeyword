@@ -6,7 +6,8 @@ namespace TheElseKeyword.Example
     {
         static void Main(string[] args)
         {
-            var bartender = new Bartender(Console.ReadLine, Console.WriteLine);
+            var recipeBook = new RecipeBook(Console.ReadLine, Console.WriteLine);
+            var bartender = new Bartender(Console.ReadLine, Console.WriteLine, recipeBook);
 
             while (true)
             {
